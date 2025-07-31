@@ -222,15 +222,6 @@ export default function MapSimulator() {
           <MapPin className="h-4 w-4" />
         </Button>
       </div>
-
-      {/* Informações de debug (remover em produção) */}
-      {userLocation && (
-        <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded text-xs max-w-xs">
-          <p>Lat: {userLocation.latitude.toFixed(6)}</p>
-          <p>Lng: {userLocation.longitude.toFixed(6)}</p>
-          <p>Precisão: {userLocation.accuracy.toFixed(0)}m</p>
-        </div>
-      )}
     </div>
   )
 }
